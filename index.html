@@ -1,799 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Atharva Ghorpade | CSE Student & Developer</title>
-
-    <meta name="description"
-          content="Portfolio of Atharva Ghorpade - B.Tech CSE student, Coding Club Mentor and aspiring software developer.">
-
-    <meta name="keywords"
-          content="Atharva Ghorpade, Java Developer, CSE Student, Web Developer, DSA, GitHub, LeetCode">
-
-    <meta name="author" content="Atharva Balasaheb Ghorpade">
-
-    <link rel="icon" href="assets/profile.jpg">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
-          rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atharva Ghorpade | Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
-
 <header class="navbar">
+    <a href="#home" class="logo">&lt;Atharva/&gt;</a>
 
-    <div class="container nav-container">
+    <button class="menu-btn" id="menuBtn">☰</button>
 
-        <a href="#home" class="logo">
-            <span>&lt;</span>AG<span>/&gt;</span>
-        </a>
+    <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-        <nav class="nav-menu" id="navMenu">
+    <button class="theme-btn" id="themeBtn">☀</button>
+</header>
 
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#education" class="nav-link">Education</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#experience" class="nav-link">Experience</a>
-            <a href="#contact" class="nav-link">Contact</a>
+<main>
 
-        </nav>
+<section id="home" class="hero section">
+    <div class="hero-content reveal">
 
-        <div class="nav-actions">
+        <p class="eyebrow">Hello, I'm</p>
 
-            <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
-                <i class="fa-solid fa-moon"></i>
-            </button>
+        <h1>Atharva <span>Ghorpade</span></h1>
 
-            <button class="menu-btn" id="menuBtn" aria-label="Open menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+        <h2>I'm <span id="typing"></span></h2>
 
+        <p class="hero-text">
+            B.Tech Computer Science & Engineering student and Coding Club Mentor
+            passionate about Java development, web applications, DSA and problem solving.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+
+        <div class="socials">
+            <a href="https://github.com/Atharva1118" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/atharva-ghorpade-45842732b" target="_blank">LinkedIn</a>
+            <a href="https://leetcode.com/u/atharva_ghorpade_2005/" target="_blank">LeetCode</a>
         </div>
 
     </div>
 
-</header>
-
-
-<!-- ================= HERO ================= -->
-
-<section class="hero" id="home">
-
-    <div class="container hero-container">
-
-        <div class="hero-content reveal">
-
-            <p class="hero-intro">
-                Hello, I'm
-            </p>
-
-            <h1>
-                Atharva
-                <span>Ghorpade</span>
-            </h1>
-
-            <h2>
-                <span id="typingText"></span>
-                <span class="cursor">|</span>
-            </h2>
-
-            <p class="hero-description">
-                B.Tech Computer Science & Engineering student passionate about
-                software development, Java, web technologies, DSA and
-                problem solving.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="btn primary-btn">
-                    <i class="fa-solid fa-code"></i>
-                    View Projects
-                </a>
-
-                <a href="#contact" class="btn secondary-btn">
-                    Contact Me
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-            </div>
-
-            <div class="social-links">
-
-                <a href="https://github.com/Atharva1118"
-                   target="_blank"
-                   aria-label="GitHub">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/atharva-ghorpade-45842732b"
-                   target="_blank"
-                   aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-
-                <a href="https://leetcode.com/u/atharva_ghorpade_2005/"
-                   target="_blank"
-                   aria-label="LeetCode">
-                    <i class="fa-solid fa-code"></i>
-                </a>
-
-                <a href="mailto:atharvag1811@gmail.com"
-                   aria-label="Email">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-
-            </div>
-
+    <div class="code-card reveal">
+        <div class="code-top">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
 
+<pre><code>public class Atharva {
 
-        <!-- CODE CARD -->
+    String role = "Software Developer";
+    String focus = "Java + Web + DSA";
 
-        <div class="hero-code reveal">
-
-            <div class="code-window">
-
-                <div class="window-header">
-
-                    <div class="window-dots">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <span class="window-title">
-                        atharva.java
-                    </span>
-
-                </div>
-
-                <div class="code-content">
-
-<pre><code><span class="keyword">public class</span> <span class="class-name">Atharva</span> {
-
-    <span class="keyword">String</span> name =
-        <span class="string">"Atharva Ghorpade"</span>;
-
-    <span class="keyword">String</span> role =
-        <span class="string">"Software Developer"</span>;
-
-    <span class="keyword">String</span>[] skills = {
-        <span class="string">"Java"</span>,
-        <span class="string">"C++"</span>,
-        <span class="string">"Python"</span>,
-        <span class="string">"SQL"</span>,
-        <span class="string">"Web Development"</span>
-    };
-
-    <span class="keyword">void</span> <span class="method">learn</span>() {
-        <span class="comment">// Keep learning.</span>
-        <span class="comment">// Keep building.</span>
-        <span class="comment">// Keep improving.</span>
+    void build() {
+        learn();
+        solveProblems();
+        createProjects();
     }
 }</code></pre>
 
-                </div>
-
-            </div>
-
-        </div>
-
     </div>
-
-    <div class="scroll-indicator">
-        <span>Scroll Down</span>
-        <i class="fa-solid fa-chevron-down"></i>
-    </div>
-
 </section>
 
+<section id="about" class="section">
 
-<!-- ================= ABOUT ================= -->
+    <div class="section-title reveal">
+        <p>01. About Me</p>
+        <h2>Building skills through <span>consistent practice.</span></h2>
+    </div>
 
-<section class="section" id="about">
+    <div class="about-grid">
 
-    <div class="container">
+        <div class="about-text reveal">
+            <p>
+                I am a third-year B.Tech Computer Science & Engineering student
+                at D. Y. Patil College of Engineering and Technology, Kolhapur.
+            </p>
 
-        <div class="section-heading reveal">
+            <p>
+                I enjoy developing web applications, learning Java backend
+                technologies, solving Data Structures & Algorithms problems
+                and exploring software development.
+            </p>
 
-            <p class="section-number">01</p>
-
-            <h2>
-                About <span>Me</span>
-            </h2>
-
-            <div class="heading-line"></div>
-
+            <p>
+                I also contribute as a Coding Club Mentor, where I help students
+                learn programming and improve their problem-solving skills.
+            </p>
         </div>
 
+        <div class="stats reveal">
 
-        <div class="about-grid">
-
-            <div class="about-image reveal">
-
-                <div class="profile-card">
-
-                    <div class="profile-icon">
-                        <i class="fa-solid fa-user-graduate"></i>
-                    </div>
-
-                    <h3>Atharva Ghorpade</h3>
-
-                    <p>B.Tech CSE Student</p>
-
-                    <div class="profile-status">
-                        <span></span>
-                        Open to Opportunities
-                    </div>
-
-                </div>
-
+            <div class="stat">
+                <strong>8.73</strong>
+                <span>CGPA</span>
             </div>
 
+            <div class="stat">
+                <strong>3rd</strong>
+                <span>Year CSE</span>
+            </div>
 
-            <div class="about-content reveal">
+            <div class="stat">
+                <strong>Java</strong>
+                <span>Backend Focus</span>
+            </div>
 
-                <h3>
-                    Building my skills one project at a time.
-                </h3>
-
-                <p>
-                    I am a third-year Computer Science & Engineering student
-                    at D. Y. Patil College of Engineering and Technology,
-                    Kolhapur.
-                </p>
-
-                <p>
-                    I enjoy learning programming, developing web applications,
-                    solving Data Structures & Algorithms problems and
-                    understanding how software works behind the scenes.
-                </p>
-
-                <p>
-                    Currently, I am focusing on strengthening my Java,
-                    backend development, SQL and problem-solving skills while
-                    building practical projects.
-                </p>
-
-
-                <div class="about-info">
-
-                    <div>
-                        <span>Name</span>
-                        <strong>Atharva Ghorpade</strong>
-                    </div>
-
-                    <div>
-                        <span>Degree</span>
-                        <strong>B.Tech CSE</strong>
-                    </div>
-
-                    <div>
-                        <span>Current Year</span>
-                        <strong>3rd Year</strong>
-                    </div>
-
-                    <div>
-                        <span>CGPA</span>
-                        <strong>8.73</strong>
-                    </div>
-
-                </div>
-
+            <div class="stat">
+                <strong>DSA</strong>
+                <span>Problem Solving</span>
             </div>
 
         </div>
 
     </div>
-
 </section>
 
+<section id="skills" class="section alt">
 
-<!-- ================= SKILLS ================= -->
+    <div class="section-title reveal">
+        <p>02. Skills</p>
+        <h2>Technologies I <span>work with.</span></h2>
+    </div>
 
-<section class="section skills-section" id="skills">
+    <div class="skills-grid">
 
-    <div class="container">
+        <article class="skill-card reveal">
+            <h3>Programming</h3>
 
-        <div class="section-heading reveal">
-
-            <p class="section-number">02</p>
-
-            <h2>
-                My <span>Skills</span>
-            </h2>
-
-            <div class="heading-line"></div>
-
-        </div>
-
-
-        <div class="skills-grid">
-
-            <div class="skill-category reveal">
-
-                <div class="skill-icon">
-                    <i class="fa-solid fa-code"></i>
-                </div>
-
-                <h3>Programming</h3>
-
-                <div class="skill-list">
-
-                    <span>C</span>
-                    <span>C++</span>
-                    <span>Java</span>
-                    <span>Python</span>
-
-                </div>
-
+            <div class="tags">
+                <span>C</span>
+                <span>C++</span>
+                <span>Java</span>
+                <span>Python</span>
+                <span>SQL</span>
             </div>
+        </article>
 
+        <article class="skill-card reveal">
+            <h3>Web Development</h3>
 
-            <div class="skill-category reveal">
-
-                <div class="skill-icon">
-                    <i class="fa-solid fa-globe"></i>
-                </div>
-
-                <h3>Web Development</h3>
-
-                <div class="skill-list">
-
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>JSP</span>
-                    <span>Servlets</span>
-
-                </div>
-
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>JSP</span>
+                <span>Servlets</span>
             </div>
+        </article>
 
+        <article class="skill-card reveal">
+            <h3>Backend & Database</h3>
 
-            <div class="skill-category reveal">
-
-                <div class="skill-icon">
-                    <i class="fa-solid fa-database"></i>
-                </div>
-
-                <h3>Database & Backend</h3>
-
-                <div class="skill-list">
-
-                    <span>MySQL</span>
-                    <span>SQL</span>
-                    <span>JDBC</span>
-                    <span>Apache Tomcat</span>
-
-                </div>
-
+            <div class="tags">
+                <span>JDBC</span>
+                <span>MySQL</span>
+                <span>Apache</span>
+                <span>Tomcat</span>
             </div>
+        </article>
 
+        <article class="skill-card reveal">
+            <h3>Tools</h3>
 
-            <div class="skill-category reveal">
-
-                <div class="skill-icon">
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                </div>
-
-                <h3>Tools</h3>
-
-                <div class="skill-list">
-
-                    <span>Git</span>
-                    <span>GitHub</span>
-                    <span>VS Code</span>
-                    <span>Eclipse</span>
-                    <span>NetBeans</span>
-
-                </div>
-
+            <div class="tags">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Eclipse</span>
+                <span>NetBeans</span>
+                <span>VS Code</span>
             </div>
+        </article>
 
-        </div>
+    </div>
+</section>
 
+<section id="education" class="section">
 
-        <div class="learning-box reveal">
+    <div class="section-title reveal">
+        <p>03. Education</p>
+        <h2>My academic <span>journey.</span></h2>
+    </div>
 
-            <div class="learning-icon">
-                <i class="fa-solid fa-rocket"></i>
-            </div>
+    <div class="timeline">
+
+        <article class="timeline-item reveal">
+            <span class="dot"></span>
 
             <div>
-
-                <h3>Currently Learning</h3>
-
-                <p>
-                    Java Backend Development • SQL • DSA • Full Stack Development
-                </p>
-
+                <span class="date">2024 - Present</span>
+                <h3>B.Tech Computer Science & Engineering</h3>
+                <p>D. Y. Patil College of Engineering and Technology, Kolhapur</p>
+                <strong>CGPA: 8.73</strong>
             </div>
+        </article>
+
+        <article class="timeline-item reveal">
+            <span class="dot"></span>
+
+            <div>
+                <span class="date">2022 - 2024</span>
+                <h3>HSC Science</h3>
+                <p>Sadhana Junior College, Gadhinglaj</p>
+                <strong>79.50%</strong>
+            </div>
+        </article>
+
+        <article class="timeline-item reveal">
+            <span class="dot"></span>
+
+            <div>
+                <span class="date">2022</span>
+                <h3>SSC</h3>
+                <p>Sadhana High School, Gadhinglaj</p>
+                <strong>89.20%</strong>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section id="projects" class="section alt">
+
+    <div class="section-title reveal">
+        <p>04. Projects</p>
+        <h2>Things I've <span>built.</span></h2>
+    </div>
+
+    <div class="projects-grid">
+
+        <article class="project-card reveal">
+
+            <div class="project-number">01</div>
+
+            <h3>Programming Language Roadmap Learning Platform</h3>
+
+            <p>
+                A web-based learning platform that provides students with
+                structured roadmaps for learning programming languages.
+            </p>
+
+            <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>MySQL</span>
+                <span>Apache</span>
+            </div>
+
+            <a href="https://github.com/Atharva1118" target="_blank">
+                View on GitHub →
+            </a>
+
+        </article>
+
+        <article class="project-card reveal">
+
+            <div class="project-number">02</div>
+
+            <h3>Student Management System</h3>
+
+            <p>
+                A Java web application for managing student records with
+                authentication, CRUD operations and database connectivity.
+            </p>
+
+            <div class="project-tech">
+                <span>Java</span>
+                <span>JSP</span>
+                <span>Servlet</span>
+                <span>JDBC</span>
+                <span>MySQL</span>
+            </div>
+
+            <a href="https://github.com/Atharva1118/Java-Backend-Journey" target="_blank">
+                View Project →
+            </a>
+
+        </article>
+
+        <article class="project-card coming reveal">
+
+            <div class="project-number">03</div>
+
+            <h3>More Projects Coming Soon</h3>
+
+            <p>
+                Currently learning and building more Java backend,
+                full-stack and Data Structures & Algorithms projects.
+            </p>
+
+            <div class="project-tech">
+                <span>Java</span>
+                <span>Spring</span>
+                <span>React</span>
+                <span>DSA</span>
+            </div>
+
+        </article>
+
+    </div>
+</section>
+
+<section id="experience" class="section">
+
+    <div class="section-title reveal">
+        <p>05. Experience</p>
+        <h2>Learning through <span>experience.</span></h2>
+    </div>
+
+    <div class="experience-grid">
+
+        <article class="experience-card reveal">
+            <span class="date">2026</span>
+            <h3>Coding Club Mentor</h3>
+            <p>
+                Supporting students in programming, problem solving
+                and technical learning activities.
+            </p>
+        </article>
+
+        <article class="experience-card reveal">
+            <span class="date">Virtual Internship</span>
+            <h3>GenAI Virtual Internship</h3>
+            <p>
+                Explored Generative AI concepts and practical applications
+                through a structured virtual internship.
+            </p>
+        </article>
+
+        <article class="experience-card reveal">
+            <span class="date">Virtual Internship</span>
+            <h3>Zscaler Networking Virtual Internship</h3>
+            <p>
+                Learned networking and cloud security concepts through
+                a virtual internship experience.
+            </p>
+        </article>
+
+    </div>
+</section>
+
+<section id="activities" class="section alt">
+
+    <div class="section-title reveal">
+        <p>06. Activities</p>
+        <h2>Workshops & <span>certifications.</span></h2>
+    </div>
+
+    <div class="cert-grid">
+
+        <article class="cert-card reveal">
+            <h3>CodeMantra Coding Competition</h3>
+            <p>TKIET College, Warananagar — Participated</p>
+        </article>
+
+        <article class="cert-card reveal">
+            <h3>AI Tools Workshop</h3>
+            <p>Be10x — Participated</p>
+        </article>
+
+        <article class="cert-card reveal">
+            <h3>MetaMorphosis 2K26</h3>
+            <p>
+                Walchand College, Sangli — 2-day workshop
+                covering Docker and Go Lang.
+            </p>
+        </article>
+
+    </div>
+</section>
+
+<section id="profiles" class="section">
+
+    <div class="section-title reveal">
+        <p>07. Coding Profiles</p>
+        <h2>Find me <span>online.</span></h2>
+    </div>
+
+    <div class="profile-grid">
+
+        <a class="profile-card reveal"
+           href="https://github.com/Atharva1118"
+           target="_blank">
+
+            <strong>GitHub</strong>
+            <span>@Atharva1118</span>
+
+        </a>
+
+        <a class="profile-card reveal"
+           href="https://leetcode.com/u/atharva_ghorpade_2005/"
+           target="_blank">
+
+            <strong>LeetCode</strong>
+            <span>atharva_ghorpade_2005</span>
+
+        </a>
+
+        <a class="profile-card reveal"
+           href="https://www.linkedin.com/in/atharva-ghorpade-45842732b"
+           target="_blank">
+
+            <strong>LinkedIn</strong>
+            <span>Atharva Ghorpade</span>
+
+        </a>
+
+    </div>
+</section>
+
+<section id="contact" class="section contact-section">
+
+    <div class="section-title reveal">
+        <p>08. Contact</p>
+        <h2>Let's <span>connect.</span></h2>
+    </div>
+
+    <div class="contact-box reveal">
+
+        <p>
+            Have a project, opportunity or technical discussion?
+            Feel free to reach out.
+        </p>
+
+        <div class="contact-links">
+
+            <a href="mailto:atharvag1811@gmail.com">
+                atharvag1811@gmail.com
+            </a>
+
+            <a href="tel:+919767797147">
+                +91 9767797147
+            </a>
 
         </div>
 
     </div>
-
 </section>
 
+</main>
 
-<!-- ================= EDUCATION ================= -->
+<footer>
+    <p>
+        © <span id="year"></span>
+        Atharva Balasaheb Ghorpade.
+        Built with HTML, CSS & JavaScript.
+    </p>
+</footer>
 
-<section class="section" id="education">
+<button id="topBtn" class="top-btn">↑</button>
 
-    <div class="container">
+<script src="script.js"></script>
 
-        <div class="section-heading reveal">
-
-            <p class="section-number">03</p>
-
-            <h2>
-                <span>Education</span>
-            </h2>
-
-            <div class="heading-line"></div>
-
-        </div>
-
-
-        <div class="timeline">
-
-
-            <div class="timeline-item reveal">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-date">
-                    2024 – Present
-                </div>
-
-                <div class="timeline-card">
-
-                    <span class="education-level">
-                        B.Tech
-                    </span>
-
-                    <h3>
-                        Computer Science & Engineering
-                    </h3>
-
-                    <p class="institution">
-                        D. Y. Patil College of Engineering and Technology,
-                        Kolhapur
-                    </p>
-
-                    <p>
-                        Currently pursuing third year of B.Tech in Computer
-                        Science & Engineering.
-                    </p>
-
-                    <div class="achievement">
-                        <i class="fa-solid fa-star"></i>
-                        CGPA: 8.73
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="timeline-item reveal">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-date">
-                    2022 – 2024
-                </div>
-
-                <div class="timeline-card">
-
-                    <span class="education-level">
-                        HSC
-                    </span>
-
-                    <h3>
-                        Science
-                    </h3>
-
-                    <p class="institution">
-                        Sadhana Junior College, Gadhinglaj
-                    </p>
-
-                    <p>
-                        Completed Higher Secondary education in Science.
-                    </p>
-
-                    <div class="achievement">
-                        <i class="fa-solid fa-star"></i>
-                        Percentage: 79.50%
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="timeline-item reveal">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-date">
-                    2022
-                </div>
-
-                <div class="timeline-card">
-
-                    <span class="education-level">
-                        SSC
-                    </span>
-
-                    <h3>
-                        Secondary School
-                    </h3>
-
-                    <p class="institution">
-                        Sadhana High School, Gadhinglaj
-                    </p>
-
-                    <p>
-                        Completed secondary school education.
-                    </p>
-
-                    <div class="achievement">
-                        <i class="fa-solid fa-star"></i>
-                        Percentage: 89.20%
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= PROJECTS ================= -->
-
-<section class="section projects-section" id="projects">
-
-    <div class="container">
-
-        <div class="section-heading reveal">
-
-            <p class="section-number">04</p>
-
-            <h2>
-                Featured <span>Projects</span>
-            </h2>
-
-            <div class="heading-line"></div>
-
-        </div>
-
-
-        <div class="projects-grid">
-
-
-            <article class="project-card featured-project reveal">
-
-                <div class="project-number">
-                    01
-                </div>
-
-                <div class="project-top">
-
-                    <div class="project-icon">
-                        <i class="fa-solid fa-route"></i>
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="https://github.com/Atharva1118"
-                           target="_blank"
-                           aria-label="GitHub">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <h3>
-                    Programming Language Roadmap
-                    Learning Platform
-                </h3>
-
-                <p>
-                    A web-based learning platform designed to provide
-                    students with structured roadmaps for learning
-                    programming languages.
-                </p>
-
-                <ul class="project-features">
-
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        Structured learning paths
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        Beginner-friendly interface
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        Interactive web experience
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        MySQL data storage
-                    </li>
-
-                </ul>
-
-                <div class="project-tech">
-
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>MySQL</span>
-                    <span>Apache</span>
-
-                </div>
-
-            </article>
-
-
-            <article class="project-card reveal">
-
-                <div class="project-number">
-                    02
-                </div>
-
-                <div class="project-top">
-
-                    <div class="project-icon">
-                        <i class="fa-solid fa-users"></i>
-                    </div>
-
-                </div>
-
-                <h3>
-                    Student Management System
-                </h3>
-
-                <p>
-                    A Java web application for managing student records,
-                    authentication and database operations.
-                </p>
-
-                <div class="project-tech">
-
-                    <span>Java</span>
-                    <span>JSP</span>
-                    <span>Servlet</span>
-                    <span>JDBC</span>
-                    <span>MySQL</span>
-
-                </div>
-
-                <span class="project-status">
-                    <i class="fa-solid fa-spinner"></i>
-                    In Development
-                </span>
-
-            </article>
-
-
-            <article class="project-card reveal">
-
-                <div class="project-number">
-                    03
-                </div>
-
-                <div class="project-top">
-
-                    <div class="project-icon">
-                        <i class="fa-solid fa-layer-group"></i>
-                    </div>
-
-                </div>
-
-                <h3>
-                    More Projects Coming Soon
-                </h3>
-
-                <p>
-                    Currently learning and building more projects in Java,
-                    backend development, DSA and full-stack development.
-                </p>
-
-                <div class="project-tech">
-
-                    <span>Java</span>
-                    <span>Spring</span>
-                    <span>SQL</span>
-                    <span>DSA</span>
-
-                </div>
-
-                <span class="project-status">
-                    <i class="fa-solid fa-code"></i>
-                    Building
-                </span>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= EXPERIENCE ================= -->
-
-<section class="section" id="experience">
-
-    <div class="container">
-
-        <div class="section-heading reveal">
-
-            <p class="section-number">05</p>
-
-            <h2>
-                Experience & <span>Activities</span>
-            </h2>
-
-            <div class="heading-line"></div>
-
-        </div>
-
-
-        <div class="experience-grid">
-
-
-            <div class="experience-card reveal">
-
-                <div class="experience-icon">
-                    <i class="fa-solid fa-users-gear"></i>
-                </div>
-
-                <div>
-
-                    <span class="experience-type">
-                        Leadership
-                    </span>
-
-                    <h3>
-                        Coding Club Mentor
-                    </h3>
-
-                    <p>
-                        Supporting fellow students in learning programming,
-                        problem solving and technical concepts.
-                    </p>
-
-      
+</body>
+</html>
