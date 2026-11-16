@@ -1,18 +1,28 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Atharva Ghorpade | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Atharva Ghorpade - Computer Science Engineering student, Software Developer, Java Developer and Coding Club Mentor.">
+    <meta name="author" content="Atharva Ghorpade">
+
+    <title>Atharva Ghorpade | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header class="navbar">
+
     <a href="#home" class="logo">&lt;Atharva/&gt;</a>
 
-    <button class="menu-btn" id="menuBtn">☰</button>
+    <button type="button" class="menu-btn" id="menuBtn"
+        aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+    </button>
 
     <nav id="navMenu">
         <a href="#home">Home</a>
@@ -21,47 +31,79 @@
         <a href="#education">Education</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
+        <a href="#activities">Activities</a>
+        <a href="#profiles">Coding Profiles</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <button class="theme-btn" id="themeBtn">☀</button>
+    <button type="button" class="theme-btn" id="themeBtn"
+        aria-label="Toggle theme">
+        ☀
+    </button>
+
 </header>
 
 <main>
 
-<section id="home" class="hero section">
-    <div class="hero-content reveal">
+    <!-- HOME SECTION -->
 
-        <p class="eyebrow">Hello, I'm</p>
+    <section id="home" class="hero section">
 
-        <h1>Atharva <span>Ghorpade</span></h1>
+        <div class="hero-content reveal">
 
-        <h2>I'm <span id="typing"></span></h2>
+            <p class="eyebrow">Hello, I'm</p>
 
-        <p class="hero-text">
-            B.Tech Computer Science & Engineering student and Coding Club Mentor
-            passionate about Java development, web applications, DSA and problem solving.
-        </p>
+            <h1>Atharva <span>Ghorpade</span></h1>
 
-        <div class="hero-buttons">
-            <a href="#projects" class="btn primary">View Projects</a>
-            <a href="#contact" class="btn secondary">Contact Me</a>
+            <h2>I'm <span id="typing"></span></h2>
+
+            <p class="hero-text">
+                B.Tech Computer Science & Engineering student and
+                Coding Club Mentor passionate about Java development,
+                web applications, workflow automation, DSA and
+                problem solving.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary">
+                    View Projects
+                </a>
+
+                <a href="#contact" class="btn secondary">
+                    Contact Me
+                </a>
+
+            </div>
+
+            <div class="socials">
+
+                <a href="https://github.com/Atharva1118"
+                   target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/atharva-ghorpade-45842732b"
+                   target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+                <a href="https://leetcode.com/u/atharva_ghorpade_2005/"
+                   target="_blank" rel="noopener noreferrer">
+                    LeetCode
+                </a>
+
+            </div>
+
         </div>
 
-        <div class="socials">
-            <a href="https://github.com/Atharva1118" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/atharva-ghorpade-45842732b" target="_blank">LinkedIn</a>
-            <a href="https://leetcode.com/u/atharva_ghorpade_2005/" target="_blank">LeetCode</a>
-        </div>
+        <div class="code-card reveal">
 
-    </div>
-
-    <div class="code-card reveal">
-        <div class="code-top">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+            <div class="code-top">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
 <pre><code>public class Atharva {
 
@@ -75,412 +117,617 @@
     }
 }</code></pre>
 
-    </div>
-</section>
-
-<section id="about" class="section">
-
-    <div class="section-title reveal">
-        <p>01. About Me</p>
-        <h2>Building skills through <span>consistent practice.</span></h2>
-    </div>
-
-    <div class="about-grid">
-
-        <div class="about-text reveal">
-            <p>
-                I am a third-year B.Tech Computer Science & Engineering student
-                at D. Y. Patil College of Engineering and Technology, Kolhapur.
-            </p>
-
-            <p>
-                I enjoy developing web applications, learning Java backend
-                technologies, solving Data Structures & Algorithms problems
-                and exploring software development.
-            </p>
-
-            <p>
-                I also contribute as a Coding Club Mentor, where I help students
-                learn programming and improve their problem-solving skills.
-            </p>
         </div>
 
-        <div class="stats reveal">
+    </section>
 
-            <div class="stat">
-                <strong>8.73</strong>
-                <span>CGPA</span>
-            </div>
 
-            <div class="stat">
-                <strong>3rd</strong>
-                <span>Year CSE</span>
-            </div>
+    <!-- ABOUT SECTION -->
 
-            <div class="stat">
-                <strong>Java</strong>
-                <span>Backend Focus</span>
-            </div>
+    <section id="about" class="section">
 
-            <div class="stat">
-                <strong>DSA</strong>
-                <span>Problem Solving</span>
-            </div>
+        <div class="section-title reveal">
+
+            <p>01. About Me</p>
+
+            <h2>
+                Building skills through
+                <span>consistent practice.</span>
+            </h2>
 
         </div>
 
-    </div>
-</section>
+        <div class="about-grid">
 
-<section id="skills" class="section alt">
+            <div class="about-text reveal">
 
-    <div class="section-title reveal">
-        <p>02. Skills</p>
-        <h2>Technologies I <span>work with.</span></h2>
-    </div>
+                <p>
+                    I am a third-year B.Tech Computer Science &
+                    Engineering student at D. Y. Patil College of
+                    Engineering and Technology, Kolhapur.
+                </p>
 
-    <div class="skills-grid">
+                <p>
+                    I enjoy developing web applications, learning
+                    Java backend technologies, solving Data
+                    Structures & Algorithms problems and exploring
+                    software development.
+                </p>
 
-        <article class="skill-card reveal">
-            <h3>Programming</h3>
+                <p>
+                    I am also interested in workflow automation
+                    and AI-powered applications, where I explore
+                    ways to simplify real-world processes through
+                    technology.
+                </p>
 
-            <div class="tags">
-                <span>C</span>
-                <span>C++</span>
-                <span>Java</span>
-                <span>Python</span>
-                <span>SQL</span>
-            </div>
-        </article>
+                <p>
+                    I contribute as a Coding Club Mentor, where
+                    I help students learn programming, understand
+                    technical concepts and improve their
+                    problem-solving skills.
+                </p>
 
-        <article class="skill-card reveal">
-            <h3>Web Development</h3>
-
-            <div class="tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>JSP</span>
-                <span>Servlets</span>
-            </div>
-        </article>
-
-        <article class="skill-card reveal">
-            <h3>Backend & Database</h3>
-
-            <div class="tags">
-                <span>JDBC</span>
-                <span>MySQL</span>
-                <span>Apache</span>
-                <span>Tomcat</span>
-            </div>
-        </article>
-
-        <article class="skill-card reveal">
-            <h3>Tools</h3>
-
-            <div class="tags">
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>Eclipse</span>
-                <span>NetBeans</span>
-                <span>VS Code</span>
-            </div>
-        </article>
-
-    </div>
-</section>
-
-<section id="education" class="section">
-
-    <div class="section-title reveal">
-        <p>03. Education</p>
-        <h2>My academic <span>journey.</span></h2>
-    </div>
-
-    <div class="timeline">
-
-        <article class="timeline-item reveal">
-            <span class="dot"></span>
-
-            <div>
-                <span class="date">2024 - Present</span>
-                <h3>B.Tech Computer Science & Engineering</h3>
-                <p>D. Y. Patil College of Engineering and Technology, Kolhapur</p>
-                <strong>CGPA: 8.73</strong>
-            </div>
-        </article>
-
-        <article class="timeline-item reveal">
-            <span class="dot"></span>
-
-            <div>
-                <span class="date">2022 - 2024</span>
-                <h3>HSC Science</h3>
-                <p>Sadhana Junior College, Gadhinglaj</p>
-                <strong>79.50%</strong>
-            </div>
-        </article>
-
-        <article class="timeline-item reveal">
-            <span class="dot"></span>
-
-            <div>
-                <span class="date">2022</span>
-                <h3>SSC</h3>
-                <p>Sadhana High School, Gadhinglaj</p>
-                <strong>89.20%</strong>
-            </div>
-        </article>
-
-    </div>
-</section>
-
-
-<section id="projects" class="section alt">
-
-    <div class="section-title reveal">
-        <p>04. Featured Projects</p>
-        <h2>Things I've <span>built.</span></h2>
-    </div>
-
-    <div class="projects-grid">
-
-        <!-- Project 01: Campus Autopilot -->
-        <article class="project-card reveal">
-
-            <div class="project-number">01</div>
-
-            <h3>Campus Autopilot</h3>
-
-            <p>
-                A campus-focused web interface designed to bring useful
-                student tools and academic resources together in one place.
-            </p>
-
-            <div class="project-tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
             </div>
 
-            <a href="https://atharva1118.github.io/campus-autopilot-ui/"
+            <div class="stats reveal">
+
+                <div class="stat">
+                    <strong>8.73</strong>
+                    <span>CGPA</span>
+                </div>
+
+                <div class="stat">
+                    <strong>3rd</strong>
+                    <span>Year CSE</span>
+                </div>
+
+                <div class="stat">
+                    <strong>Java</strong>
+                    <span>Backend Focus</span>
+                </div>
+
+                <div class="stat">
+                    <strong>DSA</strong>
+                    <span>Problem Solving</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+
+    <section id="skills" class="section alt">
+
+        <div class="section-title reveal">
+
+            <p>02. Skills</p>
+
+            <h2>
+                Technologies I
+                <span>work with.</span>
+            </h2>
+
+        </div>
+
+        <div class="skills-grid">
+
+            <article class="skill-card reveal">
+
+                <h3>Programming</h3>
+
+                <div class="tags">
+                    <span>C</span>
+                    <span>C++</span>
+                    <span>Java</span>
+                    <span>Python</span>
+                    <span>SQL</span>
+                </div>
+
+            </article>
+
+
+            <article class="skill-card reveal">
+
+                <h3>Web Development</h3>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>JSP</span>
+                    <span>Servlets</span>
+                </div>
+
+            </article>
+
+
+            <article class="skill-card reveal">
+
+                <h3>Backend & Database</h3>
+
+                <div class="tags">
+                    <span>JDBC</span>
+                    <span>MySQL</span>
+                    <span>Apache</span>
+                    <span>Tomcat</span>
+                    <span>REST APIs</span>
+                </div>
+
+            </article>
+
+
+            <article class="skill-card reveal">
+
+                <h3>Tools & Automation</h3>
+
+                <div class="tags">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>Eclipse</span>
+                    <span>NetBeans</span>
+                    <span>VS Code</span>
+                    <span>n8n</span>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION SECTION -->
+
+    <section id="education" class="section">
+
+        <div class="section-title reveal">
+
+            <p>03. Education</p>
+
+            <h2>
+                My academic
+                <span>journey.</span>
+            </h2>
+
+        </div>
+
+        <div class="timeline">
+
+            <article class="timeline-item reveal">
+
+                <span class="dot"></span>
+
+                <div>
+                    <span class="date">2024 - Present</span>
+
+                    <h3>B.Tech Computer Science & Engineering</h3>
+
+                    <p>
+                        D. Y. Patil College of Engineering and
+                        Technology, Kolhapur
+                    </p>
+
+                    <strong>CGPA: 8.73</strong>
+                </div>
+
+            </article>
+
+
+            <article class="timeline-item reveal">
+
+                <span class="dot"></span>
+
+                <div>
+                    <span class="date">2022 - 2024</span>
+
+                    <h3>HSC Science</h3>
+
+                    <p>
+                        Sadhana Junior College, Gadhinglaj
+                    </p>
+
+                    <strong>79.50%</strong>
+                </div>
+
+            </article>
+
+
+            <article class="timeline-item reveal">
+
+                <span class="dot"></span>
+
+                <div>
+                    <span class="date">2022</span>
+
+                    <h3>SSC</h3>
+
+                    <p>
+                        Sadhana High School, Gadhinglaj
+                    </p>
+
+                    <strong>89.20%</strong>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS SECTION -->
+
+    <section id="projects" class="section alt">
+
+        <div class="section-title reveal">
+
+            <p>04. Featured Projects</p>
+
+            <h2>
+                Things I've
+                <span>built.</span>
+            </h2>
+
+        </div>
+
+        <div class="projects-grid">
+
+
+            <!-- PROJECT 01: CAMPUS AUTOPILOT -->
+
+            <article class="project-card reveal">
+
+                <div class="project-number">01</div>
+
+                <h3>Campus Autopilot</h3>
+
+                <p>
+                    An AI-powered campus notice and event automation
+                    platform designed to simplify communication
+                    between faculty and students.
+
+                    Faculty can create notices for specific branches,
+                    academic years and divisions. The automation
+                    workflow processes and validates notice details,
+                    facilitates faculty approval, sends targeted
+                    email notifications using student data from
+                    Google Sheets and integrates event announcements
+                    with Google Calendar for RSVP tracking.
+                </p>
+
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>n8n</span>
+                    <span>AI Integration</span>
+                    <span>Google Sheets</span>
+                    <span>Gmail</span>
+                    <span>Google Calendar</span>
+                </div>
+
+                <p class="project-status">
+                    Frontend Live | Backend Migration Pending
+                </p>
+
+                <a href="https://atharva1118.github.io/campus-autopilot-ui/"
+                   target="_blank" rel="noopener noreferrer">
+                    Live Demo →
+                </a>
+
+            </article>
+
+
+            <!-- PROJECT 02: PROGRAMMING ROADMAP -->
+
+            <article class="project-card reveal">
+
+                <div class="project-number">02</div>
+
+                <h3>
+                    Programming Language Roadmap Learning Platform
+                </h3>
+
+                <p>
+                    A web-based learning platform that provides
+                    students with structured roadmaps for learning
+                    programming languages and improving their
+                    technical skills.
+                </p>
+
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>MySQL</span>
+                    <span>Apache</span>
+                </div>
+
+                <a href="https://github.com/Atharva1118"
+                   target="_blank" rel="noopener noreferrer">
+                    View on GitHub →
+                </a>
+
+            </article>
+
+
+            <!-- PROJECT 03: STUDENT MANAGEMENT SYSTEM -->
+
+            <article class="project-card reveal">
+
+                <div class="project-number">03</div>
+
+                <h3>Student Management System</h3>
+
+                <p>
+                    A Java web application for managing student
+                    records with authentication, CRUD operations
+                    and database connectivity.
+                </p>
+
+                <div class="project-tech">
+                    <span>Java</span>
+                    <span>JSP</span>
+                    <span>Servlet</span>
+                    <span>JDBC</span>
+                    <span>MySQL</span>
+                </div>
+
+                <a href="https://github.com/Atharva1118/Java-Backend-Journey"
+                   target="_blank" rel="noopener noreferrer">
+                    View Project →
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE SECTION -->
+
+    <section id="experience" class="section">
+
+        <div class="section-title reveal">
+
+            <p>05. Experience</p>
+
+            <h2>
+                Learning through
+                <span>experience.</span>
+            </h2>
+
+        </div>
+
+        <div class="experience-grid">
+
+            <article class="experience-card reveal">
+
+                <span class="date">2026</span>
+
+                <h3>Coding Club Mentor</h3>
+
+                <p>
+                    Mentoring students in programming fundamentals,
+                    problem-solving techniques and technical concepts.
+                    Encouraging peer learning and helping students
+                    develop practical coding skills through
+                    consistent practice.
+                </p>
+
+            </article>
+
+
+            <article class="experience-card reveal">
+
+                <span class="date">Virtual Internship</span>
+
+                <h3>GenAI Virtual Internship</h3>
+
+                <p>
+                    Explored Generative AI concepts and practical
+                    applications through a structured virtual
+                    internship.
+                </p>
+
+            </article>
+
+
+            <article class="experience-card reveal">
+
+                <span class="date">Virtual Internship</span>
+
+                <h3>Zscaler Networking Virtual Internship</h3>
+
+                <p>
+                    Learned networking and cloud security concepts
+                    through a virtual internship experience.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ACTIVITIES SECTION -->
+
+    <section id="activities" class="section alt">
+
+        <div class="section-title reveal">
+
+            <p>06. Activities</p>
+
+            <h2>
+                Workshops &
+                <span>certifications.</span>
+            </h2>
+
+        </div>
+
+        <div class="cert-grid">
+
+            <article class="cert-card reveal">
+
+                <h3>CodeMantra Coding Competition</h3>
+
+                <p>
+                    TKIET College, Warananagar — Participated
+                </p>
+
+            </article>
+
+
+            <article class="cert-card reveal">
+
+                <h3>AI Tools Workshop</h3>
+
+                <p>
+                    Be10x — Participated
+                </p>
+
+            </article>
+
+
+            <article class="cert-card reveal">
+
+                <h3>MetaMorphosis 2K26</h3>
+
+                <p>
+                    Walchand College, Sangli — 2-day workshop
+                    covering Docker and Go Lang.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- CODING PROFILES SECTION -->
+
+    <section id="profiles" class="section">
+
+        <div class="section-title reveal">
+
+            <p>07. Coding Profiles</p>
+
+            <h2>
+                Find me
+                <span>online.</span>
+            </h2>
+
+        </div>
+
+        <div class="profile-grid">
+
+
+            <a class="profile-card reveal"
+               href="https://github.com/Atharva1118"
                target="_blank" rel="noopener noreferrer">
-                Live Demo →
+
+                <strong>GitHub</strong>
+
+                <span>@Atharva1118</span>
+
             </a>
 
-        </article>
 
-
-        <!-- Project 02: Programming Language Roadmap -->
-        <article class="project-card reveal">
-
-            <div class="project-number">02</div>
-
-            <h3>Programming Language Roadmap Learning Platform</h3>
-
-            <p>
-                A web-based learning platform that provides students with
-                structured roadmaps for learning programming languages.
-            </p>
-
-            <div class="project-tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>MySQL</span>
-                <span>Apache</span>
-            </div>
-
-            <a href="https://github.com/Atharva1118"
+            <a class="profile-card reveal"
+               href="https://leetcode.com/u/atharva_ghorpade_2005/"
                target="_blank" rel="noopener noreferrer">
-                View on GitHub →
+
+                <strong>LeetCode</strong>
+
+                <span>atharva_ghorpade_2005</span>
+
             </a>
 
-        </article>
 
-
-        <!-- Project 03: Student Management System -->
-        <article class="project-card reveal">
-
-            <div class="project-number">03</div>
-
-            <h3>Student Management System</h3>
-
-            <p>
-                A Java web application for managing student records with
-                authentication, CRUD operations and database connectivity.
-            </p>
-
-            <div class="project-tech">
-                <span>Java</span>
-                <span>JSP</span>
-                <span>Servlet</span>
-                <span>JDBC</span>
-                <span>MySQL</span>
-            </div>
-
-            <a href="https://github.com/Atharva1118/Java-Backend-Journey"
+            <a class="profile-card reveal"
+               href="https://www.linkedin.com/in/atharva-ghorpade-45842732b"
                target="_blank" rel="noopener noreferrer">
-                View Project →
-            </a>
 
-        </article>
+                <strong>LinkedIn</strong>
 
-    </div>
+                <span>Atharva Ghorpade</span>
 
-</section>
-
-   
-
-<section id="experience" class="section">
-
-    <div class="section-title reveal">
-        <p>05. Experience</p>
-        <h2>Learning through <span>experience.</span></h2>
-    </div>
-
-    <div class="experience-grid">
-
-        <article class="experience-card reveal">
-            <span class="date">2026</span>
-            <h3>Coding Club Mentor</h3>
-            <p>
-                Supporting students in programming, problem solving
-                and technical learning activities.
-            </p>
-        </article>
-
-        <article class="experience-card reveal">
-            <span class="date">Virtual Internship</span>
-            <h3>GenAI Virtual Internship</h3>
-            <p>
-                Explored Generative AI concepts and practical applications
-                through a structured virtual internship.
-            </p>
-        </article>
-
-        <article class="experience-card reveal">
-            <span class="date">Virtual Internship</span>
-            <h3>Zscaler Networking Virtual Internship</h3>
-            <p>
-                Learned networking and cloud security concepts through
-                a virtual internship experience.
-            </p>
-        </article>
-
-    </div>
-</section>
-
-<section id="activities" class="section alt">
-
-    <div class="section-title reveal">
-        <p>06. Activities</p>
-        <h2>Workshops & <span>certifications.</span></h2>
-    </div>
-
-    <div class="cert-grid">
-
-        <article class="cert-card reveal">
-            <h3>CodeMantra Coding Competition</h3>
-            <p>TKIET College, Warananagar — Participated</p>
-        </article>
-
-        <article class="cert-card reveal">
-            <h3>AI Tools Workshop</h3>
-            <p>Be10x — Participated</p>
-        </article>
-
-        <article class="cert-card reveal">
-            <h3>MetaMorphosis 2K26</h3>
-            <p>
-                Walchand College, Sangli — 2-day workshop
-                covering Docker and Go Lang.
-            </p>
-        </article>
-
-    </div>
-</section>
-
-<section id="profiles" class="section">
-
-    <div class="section-title reveal">
-        <p>07. Coding Profiles</p>
-        <h2>Find me <span>online.</span></h2>
-    </div>
-
-    <div class="profile-grid">
-
-        <a class="profile-card reveal"
-           href="https://github.com/Atharva1118"
-           target="_blank">
-
-            <strong>GitHub</strong>
-            <span>@Atharva1118</span>
-
-        </a>
-
-        <a class="profile-card reveal"
-           href="https://leetcode.com/u/atharva_ghorpade_2005/"
-           target="_blank">
-
-            <strong>LeetCode</strong>
-            <span>atharva_ghorpade_2005</span>
-
-        </a>
-
-        <a class="profile-card reveal"
-           href="https://www.linkedin.com/in/atharva-ghorpade-45842732b"
-           target="_blank">
-
-            <strong>LinkedIn</strong>
-            <span>Atharva Ghorpade</span>
-
-        </a>
-
-    </div>
-</section>
-
-<section id="contact" class="section contact-section">
-
-    <div class="section-title reveal">
-        <p>08. Contact</p>
-        <h2>Let's <span>connect.</span></h2>
-    </div>
-
-    <div class="contact-box reveal">
-
-        <p>
-            Have a project, opportunity or technical discussion?
-            Feel free to reach out.
-        </p>
-
-        <div class="contact-links">
-
-            <a href="mailto:atharvag1811@gmail.com">
-                atharvag1811@gmail.com
-            </a>
-
-            <a href="tel:+919767797147">
-                +91 9767797147
             </a>
 
         </div>
 
-    </div>
-</section>
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+
+    <section id="contact" class="section contact-section">
+
+        <div class="section-title reveal">
+
+            <p>08. Contact</p>
+
+            <h2>
+                Let's
+                <span>connect.</span>
+            </h2>
+
+        </div>
+
+        <div class="contact-box reveal">
+
+            <p>
+                Have a project, opportunity or technical discussion?
+                Feel free to reach out.
+            </p>
+
+            <div class="contact-links">
+
+                <a href="mailto:atharvag1811@gmail.com">
+                    atharvag1811@gmail.com
+                </a>
+
+                <a href="tel:+919767797147">
+                    +91 9767797147
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
 
 </main>
 
+
+<!-- FOOTER -->
+
 <footer>
+
     <p>
         © <span id="year"></span>
         Atharva Balasaheb Ghorpade.
         Built with HTML, CSS & JavaScript.
     </p>
+
 </footer>
 
-<button id="topBtn" class="top-btn">↑</button>
+
+<!-- BACK TO TOP BUTTON -->
+
+<button type="button" id="topBtn" class="top-btn"
+    aria-label="Back to top">
+    ↑
+</button>
+
 
 <script src="script.js"></script>
 
